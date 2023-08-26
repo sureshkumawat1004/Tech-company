@@ -1,0 +1,589 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+/* Button CSS  */
+.btnStyle1{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 9px 18px;
+    border-radius: 5px;
+    background-color: #FF3E54;
+    border-color: #FF3E54;
+    transition: ease-in-out .3s;
+}
+.btnStyle1:hover, .btnStyle1:focus-visible, .btnStyle1:focus, .btnStyle1:active{
+    background-color: #e73448 !important;
+    border-color: #e73448 !important;
+}
+.btn-close{
+    font-size: 12px;
+}
+/* Button CSS End */
+
+/* Global CSS */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F7F7F7;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0E1F51;
+    border-radius: 50px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #091436;
+}
+.sectionPadding {
+    padding: 100px 0;
+}
+.sectionBg{
+    background-color: #F7F7F7;
+}
+.sectionBgDark{
+    background-color: #0E1F51;
+}
+.form-control{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #252525;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #F7F7F7;
+    border-color: transparent !important;
+}
+.form-control:focus {
+    background-color: #F7F7F7;
+    border-color: #0E1F51 !important;
+}
+.form-control::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #252525;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Global CSS End */
+
+/* Section Heading CSS */
+.sectionHeading {
+    z-index: 1;
+}
+.sectionHeading .subTitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #FF3E54;
+}
+.sectionHeading .mainTitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #0E1F51;
+}
+/* Section Heading CSS End */
+
+/* Header CSS  */
+.navbar-brand{
+    width: 150px;
+}
+.headerMain .nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: #0E1F51;
+    padding: 10px;
+    position: relative;
+    transition: ease-in-out .3s;
+}
+.headerMain .nav-item .nav-link::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #0E1F51;
+    transition: ease-in-out .3s;
+}
+.headerMain .nav-item .nav-link:active, .headerMain .nav-item .nav-link.active{
+    color: #FF3E54;
+}
+.headerMain .nav-item .nav-link:hover::before{
+    width: 100%;
+}
+.headerMain .nav-item .nav-link:active::before, .headerMain .nav-item .nav-link.active::before{
+    width: 100%;
+    background-color: #FF3E54;
+}
+/* Header CSS End */
+
+/* heroSection CSS  */
+
+.heroSection .sectionHeading .mainTitle {
+    font-size: 50px;
+    line-height: 1.16;
+}
+.heroSection .leftPart {
+    padding-left: 60px;
+}
+.heroSection .rightPart img {
+    position: relative;
+    left: 7%;
+}
+.circleDesign, .circleDesign2, .circleDesign3 {
+    width: 200px;
+    height: 200px;
+    top: -110px;
+    left: -30px;
+    z-index: 0;
+}
+.circleDesign2{
+    top: auto;
+    left: calc(50% - 200px);
+    bottom: -100px;
+}
+.circleDesign3 {
+    width: 100px;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 70px;
+}
+/* heroSection CSS  End*/
+
+/* aboutSection CSS */
+.aboutSection {
+}
+.pera {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #000000;
+}
+.adviseOuter .iconOuter {
+    width: 68px;
+    height: 68px;
+    padding: 15px;
+    flex: 0 0 auto;
+    background-color: #F7F7F7;
+}
+.adviseOuter .iconOuter img {
+    width: 100%;
+}
+.adviseOuter .title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    color: #0E1F51;
+}
+.adviseOuter .contactDetail {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    color: #000;
+}
+.adviseOuter .contactDetail a{
+    font-weight: 700;
+    color: #FF3E54;
+}
+/* aboutSection CSS  End*/
+
+/* planingSection CSS */
+.cardDesign {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+.cardDesign .iconOuter {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 15px;
+    transition: ease-in-out .3s;
+}
+.cardDesign .iconOuter img {
+    width: 100%;
+    transition: ease-in-out .3s;
+}
+.cardDesign .cardNumber{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.04;
+    color: #0E1F51;
+    top: 10px;
+    right: 10px;
+    opacity: 0.1;
+    transition: ease-in-out .3s;
+}
+.cardDesign .cardTitle{
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0E1F51;
+}
+.cardDesign .design{
+    gap: 10px;
+    width: 90px;
+}
+.cardDesign .design::before, .cardDesign .design::after{
+    content: '';
+    display: block;
+    height: 6px;
+    background-color: #FF3E54;
+    border-radius: 50px;
+    transition: ease-in-out .3s;
+}
+.cardDesign .design::before{
+    width: 60px;
+    margin-right: auto;
+}
+.cardDesign .design::after{
+    width: 20px;
+    margin-left: auto;
+}
+.cardDesign:hover .design::before{
+    width: 20px;
+}
+.cardDesign:hover .design::after{
+    width: 60px;
+}
+.cardDesign:hover .iconOuter {
+    background-color: #FF3E54 !important;
+}
+.cardDesign:hover .iconOuter img {
+    filter: brightness(1000);
+}
+.cardDesign:hover .cardNumber{
+    color: #FF3E54;
+}
+/* planingSection CSS End */
+
+/* whatWeDoSection CSS */
+.whatWeDoSection .adviseOuter .iconOuter {
+    background-color: rgba(255, 62, 84, 0.1);
+}
+.whatWeDoSection .adviseOuter .title {
+    color: #FF3E54;
+}
+.whatWeDoSection .adviseOuter .contactDetail {
+    line-height: 1.25;
+    color: #0E1F51;
+}
+/* whatWeDoSection CSS End */
+
+/* leadersSection CSS */
+.leadersSection .leadersRow {
+}
+.teamsMemeber .imgOuter {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.teamsMemeber .imgOuter img {
+    object-fit: cover;
+}
+.teamsMemeber .detail {
+    margin-top: 30px;
+}
+.teamsMemeber .detail .name {
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    color: #FF3E54;
+}
+.teamsMemeber .detail .post {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 500;
+    color: #0E1F51;
+    margin-top: 10px;
+}
+/* leadersSection CSS End */
+
+/* testimonialSection CSS */
+.sliderOuter .sliderItem {
+    padding: 30px;
+    border-radius: 10px;
+}
+.sliderOuter .sliderItem .clientImg{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    transition: ease-in-out .3s;
+}
+.sliderOuter .sliderItem .otherDetail {
+    margin-top: 30px;
+    transition: ease-in-out .3s;
+}
+.sliderOuter .sliderItem .otherDetail .name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #FF3E54;
+}
+.sliderOuter .sliderItem .otherDetail .post {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    color: #0E1F51;
+}
+.dubleCots {
+    width: 60px;
+    height: 60px;
+    top: 30px;
+    right: 30px;
+}
+/* .testimonialSlider .owl-item:not(.active) .sliderItem{
+    transform: scale(.90);
+} */
+/* .testimonialSlider .owl-item:not(.active) .clientImg {
+    margin-bottom: 18px;
+}
+.testimonialSlider .owl-item:not(.active) .otherDetail {
+    margin-top: 18px;
+} */
+.testimonialSlider .owl-stage{
+    display: flex;
+    align-items: center;
+}
+/* testimonialSection CSS End */
+
+/* getInTouch CSS */
+.contactCard {
+    padding: 30px;
+    border-radius: 10px;
+}
+.contact .contactIcon{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+}
+.contact .contactIcon img{
+    width: 100%;
+}
+.contact .contactTitle{
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    color: #FF3E54;
+    margin-bottom: 6px;
+}
+.contact .contactLink{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: #0E1F51;
+}
+.socialOuter .socialTitle{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.01;
+    color: #0E1F51;
+    margin-bottom: 30px;
+}
+.socialOuter .socialInner {
+    gap: 20px;
+}
+.socialOuter .socialInner .socialIcon {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #FF3E54;
+    gap: 60px;
+}
+.socialOuter .socialInner .socialIcon img {
+    filter: brightness(100);
+    transition: ease-in-out .4s;
+    transform: translateX(-80px);
+}
+.socialOuter .socialInner .socialIcon:hover img {
+    transform: translateX(0px);
+}
+/* getInTouch CSS End */
+
+/* blogSection CSS */
+.blogSection {
+}
+.blogCard {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #0E1F5133;
+    transition: ease-in-out .3s;
+}
+.blogCard .blogImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.blogCard .blogImg img, .blogCard .blogContent .blogerProfile .img img{
+    object-fit: cover;
+    object-position: top center;
+    transition: ease-in-out .3s;
+}
+.blogCard:hover{
+    box-shadow: 0px 0px 15px 0px #0E1F5133;
+}
+.blogCard:hover .blogImg img{
+    transform: scale(1.1);
+}
+.blogCard .blogContent {
+    padding-top: 20px;
+}
+.blogCard .blogContent .title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #FF3E54;
+    margin-bottom: 12px;
+}
+.blogCard .blogContent .blogerProfile .img{
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+}
+.blogCard .blogContent .blogerProfile .name {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #0E1F51;
+}
+.blogCard .blogContent .blogerDetail .postDate {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #252525;
+    opacity: .7;
+}
+/* blogSection CSS End */
+
+/* lastSection CSS */
+.sectionInner {
+    max-width: 950px;
+    padding: 60px;
+    border-radius: 10px;
+    background-image: url(../img/otherBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.sectionInner .title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.57;
+    margin-bottom: 30px;
+}
+/* lastSection CSS End */
+
+/* mainfooter CSS */
+.mainfooter .footerLogo{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.mainfooter .socialOuter .socialInner .socialIcon {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    transition: ease-in-out .3s;
+}
+.mainfooter .socialOuter .socialInner .socialIcon:hover {
+    background-color: #FF3E54;
+}
+.mainfooter .socialOuter .socialInner .socialIcon img {
+    filter: none;
+    transition: ease-in-out .3s;
+}
+.mainfooter .socialOuter .socialInner .socialIcon:hover img {
+    filter: brightness(100);
+}
+.footerLinkTitle{
+    font-size: 24px;
+    line-height: .84;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footerLinkTitle::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 5px;
+    border-radius: 50px;
+    margin-top: 20px;
+    background-color: #FF3E54;
+}
+.footerLinkOuter{
+    gap: 20px;
+}
+.footerLinkOuter .footerLink{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    transition: ease-in-out .3s;
+}
+.footerLinkOuter .footerLink:hover{
+    letter-spacing: .3px;
+    color: #FF3E54;
+}
+.footerLinkOuter .careerLink .linkIcon{
+    width: 68px;
+    height: 68px;
+    border-radius: 10px;
+    padding: 14px;
+    background-color: #fff;
+}
+.footerLinkOuter .careerLink .content .title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #FF3E54;
+}
+.footerLinkOuter .careerLink .content .dec{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.footerPera{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.subscribitionForm {
+    margin-top: 30px;
+}
+.subscribitionForm .form-control{
+ padding-left: 24px;
+ color: #000000;
+}
+.subscribitionForm .form-control:focus{
+    border-color: #FF3E54 !important;
+}
+
+
+.mainfooter .copyRight {
+    font-size: 12px;
+    padding: 14px 0;
+    border-top: 1px solid #f7f7f74f;
+}
+/* mainfooter CSS End */
